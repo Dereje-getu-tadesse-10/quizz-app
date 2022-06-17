@@ -6,3 +6,9 @@
     list-style: none;
 }
 
+:root{
+    --main-background-color: #e7ecef;
+    --card-background-color: #a3cef1;
+    --button-background-color: #6096ba;
+    
+}
