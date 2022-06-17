@@ -7,8 +7,63 @@
 }
 
 :root{
+    /* colors */
     --main-background-color: #e7ecef;
     --card-background-color: #a3cef1;
     --button-background-color: #6096ba;
-    
+    --button-text-color: #fff;
+
+    /* font */
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 1rem;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+body{
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-background-color);
+}
+
+.quizz-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* quizz header */
+.quizz-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    padding: 1rem;
+}
+.quizz-header h1{
+    font-size: 2.5rem;
+}
+
+/* button start */
+button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    cursor: pointer;
 }
