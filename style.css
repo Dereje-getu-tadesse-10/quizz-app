@@ -40,7 +40,15 @@ main{
     align-items: center;
 }
 
+/* timer */
+
+.timer{
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
 /* quizz header */
+
 .quizz-header{
     width: 100%;
     display: flex;
@@ -56,6 +64,7 @@ main{
 }
 
 /* button start */
+
 button{
     width: 50%;
     height: 50px;
