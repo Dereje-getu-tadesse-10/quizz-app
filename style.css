@@ -58,6 +58,7 @@ main{
     margin: auto;
     gap: 50px;
     padding: 1rem;
+    display: none;
 }
 .quizz-header h1{
     font-size: 2.5rem;
@@ -76,3 +77,25 @@ button{
     color: var(--button-text-color);
     cursor: pointer;
 }
+
+.quizz-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 1rem;
+}
+
+.quizz-body h2{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--card-background-color);
+    color: var(--button-text-color);
+    border-radius: 5px;
+}
+

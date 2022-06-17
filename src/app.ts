@@ -2,10 +2,12 @@ const startButton = document.getElementById('start-quizz') as HTMLButtonElement;
 const header = document.querySelector('.quizz-header') as HTMLDivElement;
 const timerContainer = document.querySelector('.timer') as HTMLDivElement;
 
+// function for remove header
 const removeHeader = () => {
     header.remove(); 
 }
 
+// function for timer to start
 const timer = (time:number) => {
     let seconds = time;
     const timer = setInterval(() => {
@@ -15,6 +17,8 @@ const timer = (time:number) => {
         if (seconds === 0) {
             clearInterval(timer);
             timerContainer.textContent = `GOO`;
+            
+            // remove header 
             setTimeout(() => {
                 removeHeader();
             }, 1100);
@@ -22,7 +26,8 @@ const timer = (time:number) => {
     }, 1000);
 }
 
+// start timer button 
 startButton.addEventListener('click', () => {
-    timer(6);
+    timer(1);
 });
 
