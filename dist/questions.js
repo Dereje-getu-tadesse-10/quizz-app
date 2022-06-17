@@ -6,8 +6,8 @@ let questions = [
     },
     {
         question: 'Quand l\'événement "load" se déclenche-t-il pour une page ?',
-        answers: ['Dès que le navigateur charge la page', 'Quand le code HTML a fini d\'être chargé', 'Quand l\'arbre DOM a été construit.', ' Quand l\'arbre DOM a été construit et toutes les ressources chargées (images, ...).'],
-        correctAnser: 'Quand l\'arbre DOM a été construit et toutes les ressources chargées (images, ...).'
+        answers: ['Dès que le navigateur charge la page', 'Quand le code HTML a fini d\'être chargé', 'Quand l\'arbre DOM a été construit.', 'Quand l\'arbre DOM a été construit et toutes les ressources chargées (images, ...).'],
+        correctAnswer: 'Quand l\'arbre DOM a été construit et toutes les ressources chargées (images, ...).'
     },
     {
         question: 'Quelle fonction permet d\'envoyer des en-têtes HTTP au navigateur avant le contenu de la page ?',
@@ -16,7 +16,7 @@ let questions = [
     },
     {
         question: 'Lequel de ces codes n’affichera pas 3 ?',
-        answers: ['alert(Math.max(-4, 3))', 'let i = 3; alert(i++);', 'alert(parseInt("3"));', 'alert(Math.floor(3.1));'],
+        answers: ['alert(Math.max(-4, 3))', 'let i = 3; alert(i++);', 'alert(parseInt("3"));', 'alert(Math.floor(2.9));'],
         correctAnswer: 'alert(Math.floor(2.9));'
     },
     {
@@ -31,7 +31,8 @@ let questions = [
     },
     {
         question: 'La boucle for ($i=0 ; $i<=3 ; $i++ ) { echo $i; }...',
-        anwers: ['Sera executé 4 fois', 'Sera executé 3 fois', 'Sera executé 2 fois', 'Sera executé 1 fois'],
+        answers: ['Sera executé 4 fois', 'Sera executé 3 fois', 'Sera executé 2 fois', 'Sera executé 1 fois'],
+        correctAnswer: 'Sera executé 3 fois'
     }
 ];
 export default questions;

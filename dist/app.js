@@ -26,5 +26,5 @@ const timer = (time) => {
 };
 // start timer button 
 startButton.addEventListener('click', () => {
-    timer(6);
+    timer(1);
 });
