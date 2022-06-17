@@ -1,6 +1,8 @@
 const startButton = document.getElementById('start-quizz') as HTMLButtonElement;
 const header = document.querySelector('.quizz-header') as HTMLDivElement;
+const quizzBody = document.querySelector('.quizz-body') as HTMLDivElement;
 const timerContainer = document.querySelector('.timer') as HTMLDivElement;
+
 
 // function for remove header
 const removeHeader = () => {
@@ -21,6 +23,7 @@ const timer = (time:number) => {
             // remove header 
             setTimeout(() => {
                 removeHeader();
+                quizzBody.style.display = 'flex';
             }, 1100);
         }
     }, 1000);
@@ -28,6 +31,6 @@ const timer = (time:number) => {
 
 // start timer button 
 startButton.addEventListener('click', () => {
-    timer(1);
+    timer(6);
 });
 
