@@ -6,7 +6,7 @@ const scoreContainer = document.querySelector('.score') as HTMLDivElement;
 
 
 const letsGo = () => {
-    let currentQuestion = 0;
+    let currentQuestion: number = 0;
     questions.forEach((question, index) => {
         // get only ne question from the array
         if (index === currentQuestion) {
@@ -19,8 +19,8 @@ const letsGo = () => {
 }
 
 const checkAnswer = () => {
-    let currentQuestion = 0;
-    let score = 1;
+    let currentQuestion: number = 0;
+    let score: number = 1;
     answersButton.forEach((answer, index) => {
         answer.addEventListener('click', () => {
             // check if answer is correct or not
@@ -33,16 +33,19 @@ const checkAnswer = () => {
             currentQuestion++;
             if (currentQuestion < questions.length) {
                 questionTitle.textContent = questions[currentQuestion].question;
+                if (currentQuestion === questions.length - 1) {
+                    scoreContainer.textContent = `Score: ${score}`;
+                }
                 // get only one question from the array
                 answersButton.forEach((answer, index) => {
                     answer.textContent = questions[currentQuestion].answers![index]; 
+                    // if is the last question, show the score
                 });
             }
             else {
                 // remove answers button
                 answersButton.forEach((answer) => {
                     answer.remove();
-                    // reset score and html element 
                     setTimeout(() => {
                         quizzBody.style.display = 'none';
                         header.style.display = 'flex';
@@ -57,6 +60,4 @@ const checkAnswer = () => {
     });
 }
 
-letsGo();
-checkAnswer();
-
+export { letsGo, checkAnswer };

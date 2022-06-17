@@ -1,3 +1,5 @@
+import { letsGo, checkAnswer } from "./play.js";
+
 const startButton = document.getElementById('start-quizz') as HTMLButtonElement;
 const header = document.querySelector('.quizz-header') as HTMLDivElement;
 const quizzBody = document.querySelector('.quizz-body') as HTMLDivElement;
@@ -30,7 +32,10 @@ const timer = (time:number) => {
 
 // start timer button 
 startButton.addEventListener('click', () => {
-    timer(1);
+    timer(6);
 });
+
+letsGo();
+checkAnswer();
 
 export { quizzBody, header, timerContainer };
