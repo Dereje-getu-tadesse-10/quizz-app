@@ -5,7 +5,7 @@ const timerContainer = document.querySelector('.timer') as HTMLDivElement;
 
 // function for remove header
 const removeHeader = () => {
-    header.remove(); 
+    header.style.display = 'none'; 
 }
 
 // function for timer to start
@@ -32,3 +32,5 @@ const timer = (time:number) => {
 startButton.addEventListener('click', () => {
     timer(1);
 });
+
+export { quizzBody, header, timerContainer };
