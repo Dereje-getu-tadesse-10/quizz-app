@@ -69,14 +69,13 @@ button{
     width: 50%;
     height: 50px;
     border: none;
-    border-radius: 10px;
     font-size: 1.5em;
     font-weight: var(--font-weight-bold);
     background-color: var(--button-background-color);
     color: var(--button-text-color);
     cursor: pointer;
 }
-
+/* quizz body style */
 .quizz-body{
     width: 100%;
     display: flex;
@@ -86,6 +85,7 @@ button{
     display: none;
 }
 
+/* style h2 question container */
 .quizz-body h2{
     padding: 2px;
     display: flex;
@@ -97,7 +97,7 @@ button{
     background-color: var(--card-background-color);
     color: var(--button-text-color);
 }
-
+/* answer div container */
 .answer{
     display: flex;
     justify-content: center;
@@ -106,6 +106,7 @@ button{
     gap: 10px;
 }
 
+/* answer button style */
 .option_{
     width: 100%;
     height: 70px;
@@ -113,8 +114,10 @@ button{
     justify-content: center;
     align-items: center;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
+/* answer question style background even && odd */
 .option_:nth-child(2n+1){
     background-color: var(--button-background-color);
     color: #fff;

@@ -3,7 +3,6 @@ const header = document.querySelector('.quizz-header') as HTMLDivElement;
 const quizzBody = document.querySelector('.quizz-body') as HTMLDivElement;
 const timerContainer = document.querySelector('.timer') as HTMLDivElement;
 
-
 // function for remove header
 const removeHeader = () => {
     header.remove(); 
