@@ -1,5 +1,4 @@
 import questions from './questions.js';
-import { quizzBody, header, timerContainer } from './app.js';
 const questionTitle = document.querySelector('.question-title');
 const answersButton = document.querySelectorAll('.option');
 const scoreContainer = document.querySelector('.score');
@@ -43,14 +42,10 @@ const checkAnswer = () => {
             else {
                 // remove answers button
                 answersButton.forEach((answer) => {
-                    answer.remove();
+                    answer.style.display = 'none';
                     setTimeout(() => {
-                        quizzBody.style.display = 'none';
-                        header.style.display = 'flex';
-                        scoreContainer.textContent = '';
-                        score = 0;
-                        timerContainer.textContent = '';
-                    }, 1000);
+                        location.reload();
+                    }, 2000);
                 });
             }
         });
