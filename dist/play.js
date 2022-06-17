@@ -28,15 +28,16 @@ const checkAnswer = () => {
             }
             // get next question
             currentQuestion++;
+            // verify if this is the last question and if yes, display the result
+            if (currentQuestion === questions.length) {
+                questionTitle.textContent = `fin du quizz`;
+            }
             if (currentQuestion < questions.length) {
                 questionTitle.textContent = questions[currentQuestion].question;
-                if (currentQuestion === questions.length - 1) {
-                    scoreContainer.textContent = `Score: ${score}`;
-                }
+                console.log(questions[currentQuestion].question);
                 // get only one question from the array
                 answersButton.forEach((answer, index) => {
                     answer.textContent = questions[currentQuestion].answers[index];
-                    // if is the last question, show the score
                 });
             }
             else {
