@@ -100,7 +100,7 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.9rem;
     font-weight: var(--font-weight-medium);
     background-color: var(--card-background-color);
     color: var(--button-text-color);
@@ -128,10 +128,22 @@ button{
 
 /* answer question style background even && odd */
 .option:nth-child(2n+1){
-    background-color: var(--button-background-color);
+    background-color: #ffa69e;
     color: #fff;
 }
 .option:nth-child(2n+2){
-    background-color: var(--card-background-color);
+    background-color: #aed9e0;
     color: #fff;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 600px){
+    .quizz-header{
+        width: 50%;
+    }
+
+    .quizz-body{
+        width: 60%;
+    }
 }
