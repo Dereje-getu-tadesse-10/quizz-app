@@ -9,9 +9,7 @@ const db = mysql.createConnection({
     user: db_user_name,
     password: db_password,
     database: 'quizz',
-    // socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
-    port: '10199'
-   
+    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'   
 })
 
 db.connect((err) => {
