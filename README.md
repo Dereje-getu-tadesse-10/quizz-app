@@ -2,7 +2,7 @@
 
 [link of quizzApp](https://derejeg.promo-106.codeur.online/quizz-app/)
 
-## start tsc file --watch
+## start watch tsc file :
 ``` 
   npm run build
 ```
