@@ -32,6 +32,7 @@ main{
     background-color: var(--main-background-color);
 }
 
+/* quizzzzzzzzzzzzzz container */
 .quizz-container{
     position: relative;
     width: 100%;
@@ -42,6 +43,7 @@ main{
     flex-direction: column;
 }
 
+/* score container (counter) */
 .score{
     position: absolute;
     top: 50px;
@@ -70,6 +72,7 @@ main{
 }
 .quizz-header h1{
     font-size: 2.5rem;
+    color: #6096ba;
 }
 
 /* button start */
@@ -95,7 +98,7 @@ button{
 
 /* style h2 question container */
 .quizz-body h2{
-    padding: 1px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,9 +140,15 @@ button{
     color: #fff;
 }
 
+/* footer */
 footer{
     position: absolute;
     bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #6096ba;
 }
 
 /* responsive */

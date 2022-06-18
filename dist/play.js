@@ -23,6 +23,12 @@ const checkAnswer = () => {
             let correctAnswer = questions[currentQuestion].correctAnswer;
             if (index === questions[currentQuestion].answers.indexOf(correctAnswer)) {
                 let currentScore = score++;
+                if (currentScore % 2 === 0) {
+                    scoreContainer.style.color = "green";
+                }
+                else {
+                    scoreContainer.style.color = "red";
+                }
                 scoreContainer.textContent = `Score: ${currentScore}`;
             }
             // get next question
